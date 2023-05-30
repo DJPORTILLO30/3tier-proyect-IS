@@ -7,7 +7,7 @@ resource "aws_security_group" "public" {
     from_port =  80
     to_port =  80
     protocol = "tcp"
-    security_groups = [aws_security_group]
+    security_groups = [aws_security_group.alb-public-sg]
   }
 
   ingress  {

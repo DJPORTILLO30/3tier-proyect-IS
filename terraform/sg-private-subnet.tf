@@ -14,7 +14,7 @@ resource "aws_security_group" "private" {
     from_port = 3000
     to_port = 3000
     protocol = "tcp"
-    cidr_block = [aws_security_group]
+    security_groups = [ aws_security_group.alb-private-sg ]
     }
 
   egress {
