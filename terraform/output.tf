@@ -47,21 +47,31 @@ output "nat-id" {
 }
 
 output "ec2-public-1-id" {
-  value = aws_instance.ec2-public-1.id
+  value = aws_instance.ec2-public-1[0].id
   
 }
 
 output "ec2-public-2-id" {
-  value = aws_instance.ec2-public-2.id
+  value = aws_instance.ec2-public-2[0].id
   
 }
 
 output "ec2-private-1-id" {
-  value = aws_instance.ec2-private-1.id
+  value = aws_instance.ec2-private-1[0].id
   
 }
 
 output "ec2-private-2-id" {
-  value = aws_instance.ec2-private-2.id
+  value = aws_instance.ec2-private-2[0].id
+  
+}
+
+output "alb-public-id" {
+  value = aws_lb.external-alb.id
+  
+}
+
+output "alb-private-id" {
+  value = aws_lb.internal-alb.id
   
 }

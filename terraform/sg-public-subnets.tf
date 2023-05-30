@@ -1,13 +1,13 @@
 resource "aws_security_group" "public" {
   name_prefix = "${local.prefix}-sg-public"
   description = "Public Security Group"
-  vpc_id = aws_vpc.this
+  vpc_id = aws_vpc.this.id
 
   ingress  {
     from_port =  80
     to_port =  80
     protocol = "tcp"
-    security_groups = [aws_security_group.alb-public-sg]
+    security_groups = [aws_security_group.alb-public-sg.id]
   }
 
   ingress  {

@@ -1,7 +1,7 @@
 resource "aws_security_group" "alb-public-sg" {
   name_prefix = "${local.prefix}-sg-alb-public"
   description = "Public Alb Security Group"
-  vpc_id = aws_vpc.this
+  vpc_id = aws_vpc.this.id
 
   ingress {
     from_port = 80
