@@ -36,3 +36,12 @@ output "public-private-1" {
 output "public-private-2" {
   value = aws_subnet.private-subnet-2.id
 }
+
+output "ig-id" {
+  value = aws_internet_gateway.this.id
+  
+}
+
+output "nat-id" {
+  value = aws_nat_gateway.nat.id
+}
