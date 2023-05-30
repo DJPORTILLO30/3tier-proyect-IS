@@ -45,3 +45,23 @@ output "ig-id" {
 output "nat-id" {
   value = aws_nat_gateway.nat.id
 }
+
+output "ec2-public-1-id" {
+  value = aws_instance.ec2-public-1.id
+  
+}
+
+output "ec2-public-2-id" {
+  value = aws_instance.ec2-public-2.id
+  
+}
+
+output "ec2-private-1-id" {
+  value = aws_instance.ec2-private-1.id
+  
+}
+
+output "ec2-private-2-id" {
+  value = aws_instance.ec2-private-2.id
+  
+}
