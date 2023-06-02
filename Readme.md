@@ -1,0 +1,84 @@
+# Arquitectura de 3 Capas
+## _Ingieneria de Software UMG 2023_
+
+[![N|Solid](data:image/png;base64,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)](https://aws.amazon.com/es/free/?gclid=CjwKCAjwpuajBhBpEiwA_ZtfhRwDADBNPFQWWMm_NzRbzRvXStEWh9qBSI3tgmE931m5Vn5oQLYp8hoCk00QAvD_BwE&trk=71b8abe7-f1bf-4f78-8553-98bb6c372818&sc_channel=ps&ef_id=CjwKCAjwpuajBhBpEiwA_ZtfhRwDADBNPFQWWMm_NzRbzRvXStEWh9qBSI3tgmE931m5Vn5oQLYp8hoCk00QAvD_BwE:G:s&s_kwcid=AL!4422!3!647999754693!e!!g!!aws!19685286946!149715822407)
+
+
+En este proyecto consiste en el despliegue de una arquitectura de 3 capas en la plataforma de AWS
+utilizando como metodologia IAC, para llevar a cabo este objetivo se ha utlizado en este caso 
+la plataforma de desarrollo de [Terraform](https://www.terraform.io/)
+
+La principal idea detrás de Terraform es tratar la infraestructura como cualquier otro código. En lugar de realizar configuraciones manuales en el panel de control de un proveedor de nube o ejecutar comandos en la línea de comandos, utilizas un archivo de configuración en formato HCL (HashiCorp Configuration Language) para definir la infraestructura.
+
+
+## Arquitectura de 3 capas
+
+La arquitectura de 3 capas en AWS se refiere a una estructura de diseño común utilizada para desarrollar aplicaciones escalables y robustas en la nube. Esta arquitectura consta de tres capas principales: capa de presentación, capa de lógica de negocio y capa de almacenamiento de datos. A continuación se describe cada una de estas capas:
+
+Capa de presentación: Esta capa es responsable de interactuar con los usuarios finales y proporcionar una interfaz de usuario. Aquí es donde se gestionan las solicitudes de los usuarios y se generan las respuestas correspondientes. Puede incluir componentes como servidores web, balanceadores de carga y servicios de CDN (Content Delivery Network) para mejorar el rendimiento y la disponibilidad de la aplicación.
+
+Capa de lógica de negocio: En esta capa, se procesa la lógica central de la aplicación. Aquí se lleva a cabo el procesamiento de datos, las operaciones de negocio y la toma de decisiones. Puede incluir instancias de servidores de aplicaciones, funciones sin servidor (serverless functions) o contenedores que ejecutan el código de la aplicación. Esta capa se comunica con la capa de presentación y la capa de almacenamiento de datos para realizar las operaciones requeridas.
+
+Capa de almacenamiento de datos: Esta capa se encarga de almacenar y administrar los datos utilizados por la aplicación. Puede incluir servicios de bases de datos, sistemas de almacenamiento de archivos, colas de mensajes y cachés. Aquí es donde se almacena la información necesaria para que la aplicación funcione correctamente. La capa de almacenamiento de datos se comunica con la capa de lógica de negocio para proporcionar y recibir datos necesarios para las operaciones de la aplicación.
+
+Esta arquitectura de 3 capas en AWS permite una separación clara de responsabilidades y escalabilidad horizontal, lo que facilita la administración y el mantenimiento de las aplicaciones en la nube. Cada capa puede escalarse y modificarse de forma independiente según las necesidades de la aplicación, lo que proporciona flexibilidad y agilidad en el desarrollo y despliegue de aplicaciones en la nube.
+
+
+### Diagrama de la arquitectura
+![Proyecto Diagrama](https://raw.githubusercontent.com/DJPORTILLO30/3tier-proyect-IS/master/img/PROYECTO%20DIAGRAMA.svg)
+
+
+
+## Tecnologias
+
+Para poder ejecutar este proyecto necesitas:
+- [Instalar Terraform](https://developer.hashicorp.com/terraform/downloads?product_intent=terraform).
+- [Crear una cuenta de AWS](https://aws.amazon.com/es/free/?gclid=CjwKCAjwpuajBhBpEiwA_ZtfhWdY0wpuQP-IfvF9AjJS_BBSEpOE9OTplWkPTuEIMaDW9ab5BmiCEBoCGeIQAvD_BwE&trk=91b901b8-15d3-4afd-a4a5-bebbe961a51f&sc_channel=ps&ef_id=CjwKCAjwpuajBhBpEiwA_ZtfhWdY0wpuQP-IfvF9AjJS_BBSEpOE9OTplWkPTuEIMaDW9ab5BmiCEBoCGeIQAvD_BwE:G:s&s_kwcid=AL!4422!3!647999789214!e!!g!!crear%20cuenta%20de%20aws!19677233652!147473979113&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
+- Tener acceso a una terminal.
+- MongoDB Atlas como motro de base de datos.
+
+## Instalacion
+
+El primer paso es instalar  AWS CLI en tu entorno de trabajo puedes hacerlo [aqui](https://docs.aws.amazon.com/es_es/cli/latest/userguide/getting-started-install.html) , una vez tengas instada la terminal de AWS CLI debes configurar tu perfil y credenciales de AWS pudes consultar esta [guia](https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-chap-configure.html) para su configuracion.
+
+El siguiente paso es instalar los proveedores de este proyecto, para esto necesitaremos estar en el directorio '/terraform' abre la terminal y ejecuta el siguiente comando
+
+```sh
+terraform init
+```
+Veras como se instalan los paquetes necesarios para la ejecucion del codigo.
+
+
+Luego debes configurar el archivo variables.tf para configurar los CDIR y la region en la cual quieres hacer el despliegue.
+
+Luego de esto verifica que todos los recursos a crear sean correctos para hacer esto ejecuta el comando
+
+```sh
+terraform plan
+```
+
+Por ultimo si todos los recursos son correctos, ejecuta el siguiente comando y despliega tu aplicacion
+
+```sh
+terraform apply
+```
+
+## Extensiones
+
+Extensiones recomendadas de VsCode para este proyecto:
+
+| Extension | Downloadlink |
+| ------ | ------ |
+| Terraform | https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform |
+
+## Referencias
+El proyecto utilizado para el despligue en esta arquitectura es https://github.com/Davinderpro01/Proyecto_Graduacion_Definitivo.git
+
+
+Si quieres aportar a este proyecto eres libre de hacer un PR con cambios o sugerencias!
+
+
+
+
+
+
