@@ -1,7 +1,6 @@
 output "vpc_id" {
   value = aws_vpc.this.id
 }
-
 output "s3_id" {
     value = aws_s3_bucket.this.id
 }
@@ -73,5 +72,10 @@ output "alb-public-id" {
 
 output "alb-private-id" {
   value = aws_lb.internal-alb.id
+  
+}
+
+output "dns_alb_pb_name" {
+  value = aws_lb.external-alb.dns_name
   
 }

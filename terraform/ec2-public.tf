@@ -28,7 +28,7 @@ resource "aws_instance" "ec2-public-2" {
     Environment = local.env
     Path        = "${basename(abspath(path.module))}/ec2-public.tf"
   }
-  depends_on = [ aws_security_group.public,aws_subnet.public-subnet-1 ]
+  depends_on = [ aws_security_group.public,aws_subnet.public-subnet-1 , aws_lb_listener.internal-alb]
 }
 
 
