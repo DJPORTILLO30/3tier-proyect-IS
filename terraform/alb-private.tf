@@ -15,13 +15,13 @@ resource "aws_lb_target_group" "internal-target-group" {
 
 resource "aws_lb_target_group_attachment" "internal-attachment-1" {
   target_group_arn = aws_lb_target_group.internal-target-group.arn
-  target_id = aws_instance.ec2-private-1[0].id
+  target_id = aws_instance.ec2-private-1.id
   port = 3000
 }
 
 resource "aws_lb_target_group_attachment" "internal-attachment-2" {
   target_group_arn = aws_lb_target_group.internal-target-group.arn
-  target_id = aws_instance.ec2-private-2[0].id
+  target_id = aws_instance.ec2-private-2.id
   port = 3000
 }
 

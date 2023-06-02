@@ -57,12 +57,12 @@ output "ec2-public-2-id" {
 }
 
 output "ec2-private-1-id" {
-  value = aws_instance.ec2-private-1[0].id
+  value = aws_instance.ec2-private-1.id
   
 }
 
 output "ec2-private-2-id" {
-  value = aws_instance.ec2-private-2[0].id
+  value = aws_instance.ec2-private-2.id
   
 }
 
