@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-    bucket = "pgis-${local.prefix}-vpc-flow-log"
+    bucket = "pf-is-${local.prefix}-vpc-flow-log"
     tags = {
       "Name" = "px-${local.prefix}-vpc-flow-log"
       Environment = local.env
