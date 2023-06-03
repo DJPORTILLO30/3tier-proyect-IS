@@ -32,5 +32,9 @@ sudo npm uninstall bcrypt
 sudo npm install bcryptjs
 sudo npm install bcrypt
 
+echo "DB_CONNECTION_STRING=mongodb://127.0.0.1:27017/Almacenar_usuarios
+claveSecreta='secretKey'
+};" > Backend/.env
+
 # Iniciar la aplicación
 sudo npm run dev
